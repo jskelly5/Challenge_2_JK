@@ -1,0 +1,87 @@
+.Body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+
+}
+
+.header {
+    height: 100px;
+    text-align: center;
+    background-color: #edf3ee;
+    margin: 0;
+    padding: 0;
+}
+
+.subheader {
+    margin: 50px;
+    padding: 0;
+    background-color: #dbedde;
+    text-align: center;
+    font-size: medium;
+}
+
+.Sidebar {
+    background-color: #dbedde;
+}
+
+#Sidebar1 {
+    margin: 50px;
+    padding: 50px;
+    display: grid;
+    grid-template-rows: 1fr, 1ft, 1fr;
+    grid-template-areas: "aboutmesidebar worksidebar contactmesidebar";
+}
+
+#aboutmesidebar {
+    grid-area: "aboutmesidebar";
+    padding: 10px;
+    text-align: left;
+}
+
+#worksidebar {
+    grid-area: "worksidebar";
+    padding: 10px;
+    text-align: center;
+}
+
+#contactmesidebar {
+    grid-area: "contactmesidebar";
+    padding: 10px;
+    text-align: right;}
+
+
+.Portfolio-section {
+margin: 0px 5%;
+display: grid;
+height: 30vh;
+    grid-template-rows: 75% 50%;
+    grid-template-columns: 75% 50%;
+    grid-template-areas:
+    "Project1 Project2"
+    "Project1  Project3";
+    }
+#Project1 {
+    grid-area: Project1;
+     background-image: url("../Assets/accessibiltiy\ -.jpg;")"
+}
+
+#Project2 {
+    grid-area: Project1;
+    background-image: url("../Assets/portfoli.jpg");
+    }
+    
+#Project3 {
+    grid-area: Project3;
+    background-image: url("../Assets/placeholder.jpg");
+}
+    
+.portfolioGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+}

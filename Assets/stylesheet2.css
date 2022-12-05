@@ -1,0 +1,147 @@
+:root{
+    --Background:linear-gradient(
+          rgba(248, 161, 200, 0.3) 0%,
+          rgba(248, 161, 200, 0.6) 100%
+        );
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:1fr 2f 1f;
+    column-gap: 40px;
+    max-width: 3000px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.header {
+    grid-column: span 3;
+    text-align: center;
+    border-bottom: 1px solid var(--Background);
+    box-shadow: rgb(217, 209, 210);
+    resize: both;
+    overflow: auto;
+}
+
+.nav {
+    padding: 30px;
+    border-right: 1px solid var(--Background);
+    resize: both;
+    overflow: auto;
+}
+
+.nav h2 {
+    text-decoration: underline;
+}
+
+.Portfolio-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2f 1f;
+    grid-template-areas: "P1 P2"
+        "P1 P3";
+        resize: both;
+    overflow: auto;
+}
+
+#Project1 {
+    grid-area: P1;
+    background-image: url(https://github.com/jskelly5/Challenge_1_JK);
+}
+
+#Project2 {
+    grid-area: P2;
+    margin-left: 15px;
+    background-image: url(https://github.com/jskelly5/Challenge_2_JK);
+}
+
+#Project3 {
+    grid-area: P3;
+    margin-top: -20px;
+    margin-left: 15px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+
+}
+.work{
+    text-align: center;
+    border: 3px solid black;
+    background-color: var(--Background);
+    font-size: large;
+    }
+
+.PF-Title {
+    position: relative;
+    margin-top: -50px;
+    margin-left: 350px;
+    text-align: center;
+    width: 450px;
+    height: 56px;
+    border: 3px solid black;
+    background-color: var(--Background);
+    box-shadow: 10px 5px 5px rgb(197, 195, 195);
+    resize: both;
+    overflow: auto;
+}
+.PF-Title1 {
+    position: relative;
+    margin-top: -50px;
+    margin-left:1250px;
+    text-align: center;
+    width: 450px;
+    height: 56px;
+    border: 3px solid black;
+    background-color: var(--Background);
+    resize: both;
+    overflow: auto;
+}
+
+.page-section{
+    grid-column: span 3;
+    border: 3px solid black;
+    background-color: var(--Background);
+    resize: both;
+    overflow: auto;
+
+}
+
+.page-section-contact{
+    text-align: center;
+    border: 3px solid black;
+    background-color: var(--Background);
+    resize: both;
+    overflow: auto;
+}
+
+.Footer {
+    text-align: center;
+    border: 3px solid black;
+    background-color: var(--Background);
+    margin-top: auto;
+    }
+.Footer h3{
+    padding: 10px;
+}
+
+.contactme a{
+    border: 3px solid black;
+    background-color: var(--Background);
+}
+
+.contactme{
+    grid-column: span 3;
+    border: 3px solid black;
+    background-color: var(--Background);
+    resize: both;
+    overflow: auto;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+
+
+}

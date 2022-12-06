@@ -57,6 +57,11 @@
     grid-row-gap: 0px;
 }
 
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 #Project1 {
     grid-area: 1 / 1 / 3 / 2; 
     padding:0;
@@ -111,6 +116,10 @@
     box-shadow: 10px 5px 5px rgb(120, 75, 75);
     resize: both;
     overflow: auto;
+}
+
+.footer{
+    text-decoration: Underline;
 }
 
 

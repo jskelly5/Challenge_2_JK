@@ -1,3 +1,8 @@
+:root{
+    --background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,94,1) 35%, rgba(255,0,249,1) 100%);;
+}
+
+
 .Body {
     max-width: 1400px;
     max-height: auto;
@@ -44,33 +49,43 @@
     font-size: medium;
 }
 
-.pagesection{
-    background-color: #edf3ee ;
+.portfolio-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
-.Portfolio-section{
-    display: flex;
-    flex-wrap: wrap;
-  justify-content: flex-start;
+#Project1 {
+    grid-area: 1 / 1 / 3 / 2; 
+    padding:0;
+    margin: 30px;}
 
+#Project2 {
+    grid-area: 1 / 2 / 2 / 3; 
+    padding:0;
+    margin: 30px;
 }
 
-#Project1{
-    height: 600px;
-    width: auto;
-}
-#Project2{
-    height: 300px;
-    width: auto;
+#Project3 {
+    grid-area: 2 / 2 / 3 / 3;
+    padding:0;
+    margin: 30px;
 }
 
-#Project3{
-    height: 300px;
-    width: auto;
+.image1{
+    width: 1100px;
+    height: 700px;
+}
+
+.image{
+    width: 500px;
+    height: auto;
 }
 
 .PF-Title {
-    
+
     position: relative;
     margin-top: -50px;
     margin-left: 350px;
@@ -78,7 +93,7 @@
     width: 450px;
     height: 56px;
     border: 3px solid black;
-    background-color: rgb(244, 244, 244);
+    background-color: var(--background);
     box-shadow: 10px 5px 5px rgb(120, 75, 75);
     resize: both;
     overflow: auto;
@@ -92,16 +107,21 @@
     width: 450px;
     height: 56px;
     border: 3px solid black;
-    background-color: rgb(219, 199, 196);
+    background-color: var(--background);
     box-shadow: 10px 5px 5px rgb(120, 75, 75);
     resize: both;
     overflow: auto;
 }
 
 
-@media screen and (min-width 1500px) {
-    .Body{background-color: aqua;}
+@media screen and (min-width:1500px) {
+    .Body {
+        background-color: linear-gradient(90deg, rgb(1, 36, 0) 0%, rgb(121, 106, 9) 35%, rgb(255, 0, 251) 100%);;
+    }
 }
-@media screen and (min-width 500px) {
-    .Body{background-color: blueviolet;
-    }}
+
+@media screen and (max-width:500px) {
+    .Body {
+        background-color: blueviolet;
+    }
+}

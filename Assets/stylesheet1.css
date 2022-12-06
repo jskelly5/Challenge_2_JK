@@ -1,9 +1,23 @@
 .Body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 2em;
+    max-width: 1400px;
+    max-height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
+
+.body-flex {
+    background: rgb(219, 199, 196);
+    padding: 5px;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
 }
 
 .header {
@@ -12,76 +26,82 @@
     background-color: #edf3ee;
     margin: 0;
     padding: 0;
-}
-
-.subheader {
-    margin: 50px;
-    padding: 0;
-    background-color: #dbedde;
-    text-align: center;
-    font-size: medium;
-}
-
-.Sidebar {
-    background-color: #dbedde;
-}
-
-#Sidebar1 {
-    margin: 50px;
-    padding: 50px;
-    display: grid;
-    grid-template-rows: 1fr, 1ft, 1fr;
-    grid-template-areas: "aboutmesidebar worksidebar contactmesidebar";
+    font-size: larger;
 }
 
 #aboutmesidebar {
-    grid-area: "aboutmesidebar";
     padding: 10px;
-    text-align: left;
+    font-size: medium;
 }
 
 #worksidebar {
-    grid-area: "worksidebar";
     padding: 10px;
-    text-align: center;
+    font-size: medium;
 }
 
 #contactmesidebar {
-    grid-area: "contactmesidebar";
     padding: 10px;
-    text-align: right;}
-
-
-.Portfolio-section {
-margin: 0px 5%;
-display: grid;
-height: 30vh;
-    grid-template-rows: 75% 50%;
-    grid-template-columns: 75% 50%;
-    grid-template-areas:
-    "Project1 Project2"
-    "Project1  Project3";
-    }
-#Project1 {
-    grid-area: Project1;
-     background-image: url("../Assets/accessibiltiy\ -.jpg;")"
+    font-size: medium;
 }
 
-#Project2 {
-    grid-area: Project1;
-    background-image: url("../Assets/portfoli.jpg");
-    }
-    
-#Project3 {
-    grid-area: Project3;
-    background-image: url("../Assets/placeholder.jpg");
+.pagesection{
+    background-color: #edf3ee ;
 }
-    
-.portfolioGridArea {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
+
+.Portfolio-section{
     display: flex;
-    position: relative;
+    flex-wrap: wrap;
+  justify-content: flex-start;
+
 }
+
+#Project1{
+    height: 600px;
+    width: auto;
+}
+#Project2{
+    height: 300px;
+    width: auto;
+}
+
+#Project3{
+    height: 300px;
+    width: auto;
+}
+
+.PF-Title {
+    
+    position: relative;
+    margin-top: -50px;
+    margin-left: 350px;
+    text-align: center;
+    width: 450px;
+    height: 56px;
+    border: 3px solid black;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 10px 5px 5px rgb(120, 75, 75);
+    resize: both;
+    overflow: auto;
+}
+
+.PF-Title1 {
+    position: relative;
+    margin-top: -50px;
+    margin-left: 350px;
+    text-align: center;
+    width: 450px;
+    height: 56px;
+    border: 3px solid black;
+    background-color: rgb(219, 199, 196);
+    box-shadow: 10px 5px 5px rgb(120, 75, 75);
+    resize: both;
+    overflow: auto;
+}
+
+
+@media screen and (min-width 1500px) {
+    .Body{background-color: aqua;}
+}
+@media screen and (min-width 500px) {
+    .Body{background-color: blueviolet;
+    }}
